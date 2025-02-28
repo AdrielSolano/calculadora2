@@ -46,7 +46,7 @@ class TestCalculadora(unittest.TestCase):
 		#prueba division con resultado decimal
 		self.assertEqual(self.calc.dividir(10, 3), 3.3333333333333335)
 		#prueba division periodica usando assertAlmostEqual para comparar con precision limitada
-		self.assertAlmostEqual(self.calc.dividir(13, 8), 1.625)
+		self.assertAlmostEqual(self.calc.dividir(29, 6), 4.833333333333333)
 		#prueba division por cero
 		with self.assertRaises(ValueError):
 			self.calc.dividir(10, 0)
